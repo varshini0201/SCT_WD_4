@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  padding: 40px 15px;
+  min-height: 100vh;
+}
+
+.todo-app {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.task-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input[type="text"],
+.task-input input[type="datetime-local"] {
+  flex: 1 1 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.task-input button {
+  flex: 1 1 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-input button:hover {
+  background-color: #43a047;
+}
+
+.task-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.task-list li {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: transform 0.2s;
+  border-left: 5px solid #007bff;
+  position: relative;
+}
+
+.task-list li:hover {
+  transform: scale(1.01);
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  background-color: #e0e0e0;
+  color: #777;
+  border-left-color: #6c757d;
+}
+
+.task-controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.task-controls button {
+  flex: 1;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.task-controls .complete {
+  background-color: #2e7d32;
+}
+
+.task-controls .edit {
+  background-color: #ff9800;
+}
+
+.task-controls .delete {
+  background-color: #f44336;
+}
+
+.task-controls button:hover {
+  opacity: 0.9;
+}
