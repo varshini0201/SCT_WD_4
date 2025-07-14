@@ -6,7 +6,7 @@ A simple and interactive To-Do List web app that helps users keep track of their
 
 ## 🚀 Live Demo
 
-https://svb10877-5500.inc1.devtunnels.ms/
+[Live Demo](https://varshini0201.github.io/SCT_WD_4/)
 
 ---
 
